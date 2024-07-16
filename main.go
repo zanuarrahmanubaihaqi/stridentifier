@@ -5,11 +5,6 @@ import (
 	"strings"
 )
 
-type Responses struct {
-	Name string `json:"name"`
-	Cost int    `json:"cost"`
-}
-
 func main() {
 	var str string
 	fmt.Scan(&str)
