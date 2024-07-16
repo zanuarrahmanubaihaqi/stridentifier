@@ -77,4 +77,4 @@ func SimpleFunction(str string) {
 
 	fmt.Println(strs)
 }
-// Output : map[a:4 b:3 c:3 d:1]
+// Output : map[a:8 b:3 e:1 f:4]
