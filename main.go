@@ -63,3 +63,18 @@ func OtherFunction(str string) {
 // b = 3
 // e = 1
 // f = 4
+
+func SimpleFunction(str string) {
+	strs := map[string]int{}
+
+	for _, v := range strings.Split(str, "") {
+		if strs[v] == 0 {
+			strs[v]++
+		} else {
+			strs[v] += 1
+		}
+	}
+
+	fmt.Println(strs)
+}
+// Output : map[a:4 b:3 c:3 d:1]
