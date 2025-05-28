@@ -39,7 +39,7 @@ func CountUniqueChars(Str string) {
 // Contoh : Input  : “aaaasssiia”output  : [[“a”: 4], [“s”: 3], [“i”: 2], [“a”: 1]]
 
 func OtherFunction(str string) {
-	kata := "aaabbbaaaeffffaa"
+	kata := "aaabbbcccdae"
 	splitKata := strings.Split(kata, "")
 	sort.Strings(splitKata)
 	var huruf []string
@@ -59,22 +59,8 @@ func OtherFunction(str string) {
 	}
 }
 // Output :
-// a = 8
+// a = 4
 // b = 3
+// c = 3
+// d = 1
 // e = 1
-// f = 4
-
-func SimpleFunction(str string) {
-	strs := map[string]int{}
-
-	for _, v := range strings.Split(str, "") {
-		if strs[v] == 0 {
-			strs[v]++
-		} else {
-			strs[v] += 1
-		}
-	}
-
-	fmt.Println(strs)
-}
-// Output : map[a:8 b:3 e:1 f:4]
